@@ -1,0 +1,25 @@
+
+@media not all and (min-resolution:.001dpcm){ 
+  @supports (-webkit-appearance:none) {
+    // [type='checkbox'], [type='radio']{
+    //   @apply w-5;
+    // }
+
+    .full-banner-entry{
+      background-attachment: initial;
+    }
+
+    /**
+     * Keep iOS Safari from zooming the viewport when focusing login inputs.
+     * Safari auto-zooms when font-size < 16px, so enforce it in the modal.
+     */
+    salla-login-modal {
+      input,
+      select,
+      textarea {
+        font-size: 16px !important;
+        line-height: 1.4;
+      }
+    }
+  }
+}
